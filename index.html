@@ -10,12 +10,15 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="./index.js" defer></script>
+
     <title>DNC Coffee</title>
   </head>
   <body style="background-color: #f6f5fb">
@@ -36,13 +39,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item ps-3">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#sobre"
-                >Sobre</a
-              >
+              <a class="nav-link" href="#">Sobre</a>
             </li>
             <li class="nav-item ps-3">
               <a class="nav-link" href="#">Funcionamento</a>
@@ -74,12 +71,13 @@
           class="card-img-top object-fit-none rounded-top"
           alt="..."
         />
-        <div class="card-body">
+        <div class="card-body d-flex flex-column align-items-center">
           <p class="card-text">
             Nossa loja de café se encontra em um lugar, 100% fictício, porém
             caso se sinta interessado pode vir tomar um café conosco em nossa
             sede em São José dos Campos.
           </p>
+          <button type="button" class="btn-comprar">Comprar agora</button>
         </div>
       </article>
       <article class="card m-3 border-1 rounded-2">
@@ -89,12 +87,13 @@
           class="card-img-top object-fit-none rounded-top"
           alt="..."
         />
-        <div class="card-body">
+        <div class="card-body d-flex flex-column align-items-center">
           <p class="card-text">
             Nossa casa de café é a melhor da região, aqui você tem tudo que
             precisa, uma boa conversar, bons amigos e um ambiente sem igual.
             Aproveite, pois Melhor que a DNC não existe!
           </p>
+          <button type="button" class="btn-comprar">Comprar agora</button>
         </div>
       </article>
       <article class="card m-3 border-1 rounded-2">
@@ -104,12 +103,13 @@
           class="card-img-top object-fit-none rounded-top"
           alt="..."
         />
-        <div class="card-body">
+        <div class="card-body d-flex flex-column align-items-center">
           <p class="card-text">
             Por que a DNC? Porque podem contar sempre com um serviço genuíno,
             uma atmosfera acolhedora e uma incrível xícara de café, torrado por
             especialistas e preparado de forma enriquecedora.
           </p>
+          <button type="button" class="btn-comprar">Comprar agora</button>
         </div>
       </article>
       <article class="card m-3 border-1 rounded-2">
@@ -119,16 +119,21 @@
           class="card-img-top object-fit-none rounded-top"
           alt="..."
         />
-        <div class="card-body">
+        <div class="card-body d-flex flex-column align-items-center">
           <p class="card-text">
             A escola especialista em formar talentos, com foco em
             empregabilidade, migração de carreira e aumento de performance.
           </p>
+          <button type="button" class="btn-comprar">Comprar agora</button>
         </div>
       </article>
     </main>
 
-    <div class="modal fade" id="sobre" tabindex="-1">
+    <div
+      class="modal fade justify-content-center align-items-center"
+      id="funcionamento"
+      tabindex="-1"
+    >
       <div class="modal-dialog">
         <div class="modal-content p-5">
           <div>
@@ -139,15 +144,12 @@
               aria-label="Close"
             ></button>
           </div>
-          <h2 class="text-center fw-light">Quem somos nós?</h2>
+          <h2 class="text-center fw-light">Atendimento</h2>
           <p class="p-3 fw-light text-center">
-            Tudo o que fazemos procura respeitar essa conexão, desde nosso
-            compromisso com o café de melhor qualidade do mundo até a forma como
-            nós interagimos com nossos clientes e nossas comunidades para
-            conduzir nosso negócio de modo responsável.
+            Rua José de Alencar, 111, Centro CEP: 12209-000 | +55 (11) 3333-8000
           </p>
 
-          <img src="./assets/images/sobre.png" width="100" class="mx-auto" />
+          <button type="button" class="btn-contato">ENTRAR EM CONTATO</button>
         </div>
       </div>
     </div>
